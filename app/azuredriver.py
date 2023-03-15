@@ -3,7 +3,7 @@ import pandas as pd
 import toml
 
 
-SECRETS = toml.load("./.streamlit/secrets.toml")
+SECRETS = toml.load("streamlit/secrets.toml")
 
 server = SECRETS['database']['sql_server']
 database = SECRETS['database']['sql_database_name']
