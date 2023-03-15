@@ -10,7 +10,7 @@ from typing import NewType
 import os
 
 
-_SECRETS = toml.load("streamlit/secrets.toml")
+_SECRETS = toml.load(".streamlit/secrets.toml")
 SERVICE = GraphService(
     _SECRETS["database"]["neo4j_endpoint"],
     auth=(_SECRETS["database"]["neo4j_username"], 
