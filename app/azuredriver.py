@@ -11,6 +11,13 @@ username = SECRETS['database']['sql_username']
 password = SECRETS['database']['sql_password']
 driver= '{ODBC Driver 17 for SQL Server}'
 '''
+password = "Famicom77!"
+
+server = "impaxsqlserver.database.windows.net"
+
+database = "Portal"
+
+username = "portal_excel_read"
 
 def sql_to_pandas(query: str):
     with pyodbc.connect('DRIVER='+driver+';SERVER=tcp:'+server+';PORT=1433;DATABASE='+database+';UID='+username+';PWD='+ password) as conn:
