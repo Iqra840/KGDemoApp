@@ -11,9 +11,11 @@ from py2neo.matching import NodeMatcher, RelationshipMatcher
 
 
 KEY = 0 # key to be entered into input fields; increment this every time
+'''
 _SECRETS = toml.load("streamlit/secrets.toml")
 NEODASH_URL = _SECRETS["external_links"]["neodash_url"]
-
+'''
+NEODASH_URL="https://iqra840.github.io/nd_demo/"
 nodematcher = NodeMatcher(SERVICE['fmptest'])
 relationshipmatcher = RelationshipMatcher(SERVICE['fmptest'])
 company_props = ['interestCoverage_T1yr', 'priceCashFlowRatio_T1yr', 'payoutRatio_T5yr', 
